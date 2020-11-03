@@ -32,6 +32,9 @@ jobs:
         with:
           cmd: install
         
+      - name: Install Yarn
+        run: sudo apt update && sudo apt install yarn
+       
        # Runs a set of commands using the runners shell
       - name: Build Yarn
         run: yarn build 
