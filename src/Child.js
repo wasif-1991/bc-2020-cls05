@@ -1,12 +1,13 @@
 import React, { useContext } from 'react';
 import counterContext from './CounterContext';
 
-const Child = () => {
+function Child(props) {
 
-    let counterValue = useContext(counterContext)
+    let counterValue = useContext(counterContext);
     
     return(
         <div>
+            <h1>My name is {props.name}</h1>
             <h2>This is first child using Counter Context.</h2>
             <h3>Counter value is: {counterValue[0]}</h3>
 
