@@ -1,19 +1,16 @@
-import {useReducer} from 'react';
-import counterReducer from './CounterReducer';
+import { useReducer } from 'react';
+import CounterReducer from './CounterReducer';
 
 const Child2 = () => {
-
-    let [state, dispatch] = useReducer(counterReducer, 1);
+    
+    let [state, setState] = useReducer(CounterReducer,0);
 
     return(
         <div>
-            <h2>This is second child using Counter Reducer.</h2>
+            <h2>This is a second child using Counter Reducer</h2>
             <h3>Value of reducer state is: {state}</h3>
-            <button onClick={()=> dispatch('INCREMENT')}>
-                Increment Reducer
-            </button>
+            <button onClick = {() => setState('INCREMENT')}>Increment Reducer</button>            
         </div>
-
     )
 }
 
