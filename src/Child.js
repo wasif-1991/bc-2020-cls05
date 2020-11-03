@@ -4,6 +4,7 @@ import counterContext from './CounterContext';
 const Child = () => {
 
     let counterValue = useContext(counterContext)
+    
     return(
         <div>
             <h2>This is first child using Counter Context.</h2>
