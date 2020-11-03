@@ -2,7 +2,7 @@ import React from 'react';
 import Child from './Child.js';
 import Child2 from './Child2.js'
 
-const Parent = (props) => {
+function Parent(props) {
     return(
         <div>
             <Child />
