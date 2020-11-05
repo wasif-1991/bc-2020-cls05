@@ -7,7 +7,7 @@ function Child(props) {
     
     return (
     <div>
-        <h1>My name is {props.name}</h1>
+        <h1>My name is Wasif Ahmed</h1>
         <h2>This is a first child using Counter Context</h2>
         <h3>Counter value is: {counterValue[0]}</h3>
 
